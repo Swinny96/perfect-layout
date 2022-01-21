@@ -1,0 +1,47 @@
+.layout {
+  width: 100%;
+  display: grid;
+  grid:
+    "header header" auto
+    "leftSide body" 1fr
+    "footer footer" auto
+    / auto 1fr;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  height: 10vh;
+  background-color: antiquewhite;
+  align-self: stretch;
+}
+.leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: leftSide;
+  width: 15vw;
+  background-color: aquamarine;
+  align-self: stretch;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: body;
+  background-color: beige;
+  align-self: stretch;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  height: 10vh;
+  align-self: stretch;
+}
